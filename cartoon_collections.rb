@@ -11,15 +11,15 @@ planeteer_calls.collect {|element| "#{element.capitalize}!"}
 end
 
 def long_planeteer_calls(words)
+
   words.map do |word| 
     if word.size > 4 
       return true 
-    else 
-      return false 
     end
+    
   end
+  return false
   
-  # Your code here
 end
 
 def find_the_cheese(cheese)
